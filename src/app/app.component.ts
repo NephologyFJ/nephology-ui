@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Stormpath } from 'angular-stormpath';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  private user$: Observable<Account | boolean>;
+
+  constructor(public stormpath: Stormpath) {
+  }
+
+  ngOnInit() {
+    this.user$ = this.stormpath.user$;
+  }
+
 }
