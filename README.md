@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
+## Install dependencies for development
+
+On the top level (where package.json is defined), run 'npm install'. All the dependencies defined in package.json will be downloaded to a new 'node_modules' folder.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
