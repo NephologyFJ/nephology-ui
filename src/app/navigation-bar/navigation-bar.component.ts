@@ -10,10 +10,10 @@ import { Observable } from 'rxjs';
 })
 
 export class NavigationBarComponent {
-  private user$: Observable<Account | boolean>;
-  private loggedIn$: Observable<boolean>;
-  private login: boolean;
-  private register: boolean;
+  public user$: Observable<Account | boolean>;
+  public loggedIn$: Observable<boolean>;
+  public login: boolean;
+  public register: boolean;
 
   constructor(public stormpath: Stormpath) {
   }

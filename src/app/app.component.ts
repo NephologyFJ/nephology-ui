@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
 
-  private user$: Observable<Account | boolean>;
+  public user$: Observable<Account | boolean>;
 
   constructor(public stormpath: Stormpath) {
   }
